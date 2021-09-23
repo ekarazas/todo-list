@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Form from "./components/Form/Form";
+import TodoList from "./components/TodoList/Todolist";
 
 const App = () => {
   const [title, setTitle] = useState("");
@@ -39,6 +40,7 @@ const App = () => {
         takeTitleValue={takeTitleValue}
         title={title}
       />
+      <TodoList todos={todos} setTodos={setTodos} />
     </>
   );
 };
