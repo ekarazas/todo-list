@@ -11,6 +11,8 @@ const Form = ({ submitHandle, takeTitleValue, title }) => {
           name="title"
           className="todo-input"
           placeholder="Task title..."
+          minLength="1"
+          maxLength="15"
         />
         <div className="button-position">
           <button type="submit" className="add-button">
